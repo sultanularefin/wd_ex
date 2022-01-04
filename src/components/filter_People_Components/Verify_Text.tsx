@@ -4,12 +4,12 @@ import {CommonActions} from "@react-navigation/native";
 import {Ionicons, MaterialCommunityIcons} from "@expo/vector-icons";
 
 
-export interface Edit_Filter_Navigation_component_in_Filter_Page_Props{
+export interface Verify_Text_Props{
     displayHeight: number,
     displayWidth: number,
     navigation:any,
 }
-const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navigation_component_in_Filter_Page_Props> = ({
+const Verify_Text: React.FC<Verify_Text_Props> = ({
                                                                                                       navigation,
                                                                                                       displayHeight,
                                                                                                       displayWidth,
@@ -17,7 +17,7 @@ const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navi
                                                                                                   }) => {
 
 
-// const Edit_Filter_Navigation_component_in_Filter_Page= () =>{
+// const Verify_Text= () =>{
 
     return(
         <View style={{
@@ -90,9 +90,9 @@ const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navi
                                     fontSize: 36,
                                     fontWeight: 'bold',
                                     alignSelf: 'flex-start',
-                                    color: 'teal',
+                                    color: 'black',
                                 }}>
-                                    Login
+                                    Verify
 
 
                                 </Text>
@@ -124,4 +124,4 @@ const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navi
     );
 }
 
-export default Edit_Filter_Navigation_component_in_Filter_Page;
+export default Verify_Text;

@@ -27,6 +27,10 @@ import {
 import EditUserAnalyzer_Page from "../screens/EditUserAnalyzer_Page";
 import Filter_People_Page from "../screens/Filter_People_Page";
 import SplashScreen from "../screens/SplashScreen";
+import SecondPage_WithNavigation from "../screens/SecondPage_WithNavigation";
+import HomeCategories from "../screens/HomeCategories";
+import Login_with_Phone from "../screens/Login_with_Phone";
+import VerifyOTP from "../screens/VerifyOTP";
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
     return (
         <NavigationContainer
@@ -50,6 +54,9 @@ function RootNavigator() {
 
 
             <Stack.Group screenOptions={{presentation: 'modal'}}>
+
+
+
                 <Stack.Screen
                     name="SplashScreen"
                     component={SplashScreen}
@@ -57,6 +64,47 @@ function RootNavigator() {
                         headerShown: false,
                     }}
                 />
+
+                <Stack.Screen
+                    name="VerifyOTP"
+                    component={VerifyOTP}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+
+
+
+                <Stack.Screen
+                    name="Login_with_Phone"
+                    component={Login_with_Phone}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+
+
+
+
+                <Stack.Screen
+                    name="HomeCategories"
+                    component={HomeCategories}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+
+
+
+                <Stack.Screen
+                    name="SecondPage_WithNavigation"
+                    component={SecondPage_WithNavigation}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
+
+
 
 
                 <Stack.Screen

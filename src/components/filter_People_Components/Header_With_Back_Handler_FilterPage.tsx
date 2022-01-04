@@ -53,7 +53,8 @@ const Header_With_Back_Handler_FilterPage: React.FC<Header_With_Back_Handler_Fil
                     style={{
                         flexDirection: 'column',
                         justifyContent: 'center',
-                        backgroundColor: 'teal',
+                        // backgroundColor: 'teal',
+                        backgroundColor: 'white',
                         paddingStart: 16,
                         width: displayWidth/6,
 
@@ -75,7 +76,7 @@ const Header_With_Back_Handler_FilterPage: React.FC<Header_With_Back_Handler_Fil
                         <Ionicons
                             name='arrow-back-sharp'
                             size={40}
-                            color='white'
+                            color='grey'
                         />
                     </TouchableOpacity>
                 </View>
@@ -86,7 +87,8 @@ const Header_With_Back_Handler_FilterPage: React.FC<Header_With_Back_Handler_Fil
 
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    backgroundColor: 'teal',
+                    // backgroundColor: 'teal',
+                    backgroundColor: 'white',
                     // paddingStart: 16,
                     width: (displayWidth- (displayWidth/6)),
 

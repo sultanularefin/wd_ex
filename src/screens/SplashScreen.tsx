@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import {
-    Alert, AsyncStorage,
+    Alert,
     FlatList,
     Image, KeyboardAvoidingView,
     Platform, SafeAreaView, ScrollView,
@@ -31,9 +31,9 @@ import {
     user_Filter_Payload_Interface
 } from "../appStore/Reducers/UserAnalyzerSlice";
 import Filter_People_Page from "./Filter_People_Page";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-
-const calendarImage = require('../../assets/images/date_icon.png');
+// const calendarImage = require('../../assets/images/date_icon.png');
 const splashImage = require('./../../assets/SplashScreenTC.png');
 
 export interface UserAnalyzer_Page_Props {
@@ -104,7 +104,7 @@ const UserAnalyzer_Page: React.FC<UserAnalyzer_Page_Props> = ({props, navigation
                                     index: 0,
                                     // routes: [{name: 'LoginScreen'}],
 
-                                    routes: [{name: 'HomeScreen'}],
+                                    routes: [{name: 'HomeCategories'}],
 
 
 
@@ -135,7 +135,7 @@ const UserAnalyzer_Page: React.FC<UserAnalyzer_Page_Props> = ({props, navigation
                                     index: 0,
                                     // routes: [{name: 'LoginScreen'}],
 
-                                    routes: [{name: 'HomeScreen'}],
+                                    routes: [{name: 'SecondPage_WithNavigation'}],
 
 
 
@@ -157,14 +157,9 @@ const UserAnalyzer_Page: React.FC<UserAnalyzer_Page_Props> = ({props, navigation
 
         };
 
-        // checkUserSignedIn();
+        checkUserSignedIn();
 
-        checkUserSignedIn().finally(async () => {
-            await RNBootSplash.hide({ fade: true });
-            console.log("Bootsplash has been hidden successfully");
-        });
 
-        permissionCheck();
 
 
     }, [navigation]);

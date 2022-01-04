@@ -4,12 +4,12 @@ import {CommonActions} from "@react-navigation/native";
 import {Ionicons, MaterialCommunityIcons} from "@expo/vector-icons";
 
 
-export interface Edit_Filter_Navigation_component_in_Filter_Page_Props{
+export interface LoginLabel_Props{
     displayHeight: number,
     displayWidth: number,
     navigation:any,
 }
-const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navigation_component_in_Filter_Page_Props> = ({
+const LoginLabel: React.FC<LoginLabel_Props> = ({
                                                                                                       navigation,
                                                                                                       displayHeight,
                                                                                                       displayWidth,
@@ -17,18 +17,18 @@ const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navi
                                                                                                   }) => {
 
 
-// const Edit_Filter_Navigation_component_in_Filter_Page= () =>{
+// const LoginLabel= () =>{
 
     return(
         <View style={{
-            height: displayHeight/10,
+            height: displayHeight/20,
             // backgroundColor: 'white',
             flexDirection: 'column',
             justifyContent: 'flex-start',
             // backgroundColor: 'white',
             backgroundColor: 'blue',
             width: displayWidth,
-            marginBottom: 10,
+            // marginBottom: 10,
         }}>
 
 
@@ -87,12 +87,12 @@ const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navi
                             }}>
 
                                 <Text style={{
-                                    fontSize: 36,
+                                    fontSize: 16,
                                     fontWeight: 'bold',
                                     alignSelf: 'flex-start',
-                                    color: 'teal',
+                                    color: 'grey',
                                 }}>
-                                    Login
+                                    OTP
 
 
                                 </Text>
@@ -124,4 +124,4 @@ const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navi
     );
 }
 
-export default Edit_Filter_Navigation_component_in_Filter_Page;
+export default LoginLabel;

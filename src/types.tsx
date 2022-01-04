@@ -9,6 +9,8 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import UserAnalyzer_Page from "./screens/UserAnalyzer_Page";
 import EditUserAnalyzer_Page from "./screens/EditUserAnalyzer_Page";
 import Filter_People_Page from "./screens/Filter_People_Page";
+import Login_with_Phone from "./screens/Login_with_Phone";
+import VerifyOTP from "./screens/VerifyOTP";
 
 declare global {
   namespace ReactNavigation {
@@ -23,6 +25,10 @@ export type RootStackParamList = {
   EditUserAnalyzer_Page: undefined;
   Filter_People_Page: undefined;
   SplashScreen: undefined;
+  SecondPage_WithNavigation: undefined;
+  HomeCategories: undefined;
+  Login_with_Phone: undefined;
+  VerifyOTP:undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<

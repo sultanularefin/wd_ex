@@ -11,6 +11,7 @@ import {
 
 // import authSlice from "../Reducers/authSlice";
 import UserAnalyzerSlice from "../Reducers/UserAnalyzerSlice";
+import authSlicewd from "../Reducers/authSlicewd";
 
 
 
@@ -31,8 +32,8 @@ const rootReducer: Reducer = (state: RootState, action: AnyAction) => {
 const combinedReducer = combineReducers({
 
 
-    // authReducer: authSlice,
-    UserAnalyzer_Reducer: UserAnalyzerSlice,
+    authReducer: authSlicewd,
+    // UserAnalyzer_Reducer: UserAnalyzerSlice,
 
 
 });

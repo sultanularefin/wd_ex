@@ -60,20 +60,8 @@ const SecondPage_WithNavigation: React.FC<Props> = ({ navigation}) => {
                     fontSize: 20,
                     fontWeight: 'bold',
                     color: "grey",
-                }}>Welcome to Bolt</Text>
-                {/* <View
-                    style={{
-                        borderRadius: 3,
-                        paddingHorizontal: 4,
-                        marginVertical: 7,
+                }}>Welcome to WD_WC</Text>
 
-                    }}
-
-
-                >
-
-                    <MonoText>Select Filters to Generate Report</MonoText>
-                </View>*/}
 
             </View>
 
@@ -91,10 +79,7 @@ const SecondPage_WithNavigation: React.FC<Props> = ({ navigation}) => {
                     //@ts-ignore
                     duraton="2000"
                     source={foodImage}
-                    // style={styles.logo}
-                    // resizeMode="stretch"
-                    // resizeMode="stretch"
-                    // resizeMode="contain"
+
                     resizeMode="cover"
 
                 />
@@ -137,7 +122,7 @@ const SecondPage_WithNavigation: React.FC<Props> = ({ navigation}) => {
                     {/*border-radius: 6px;*/}
 
 
-                    <TouchableOpacity onPress={() => navigation.navigate("Login_with_Phone")}>
+                    <TouchableOpacity onPress={() => navigation.navigate("LoginScreen")}>
                         <LinearGradient
                             colors={["#667EEA", "#64B6FF"]}
                             style={{
@@ -148,7 +133,37 @@ const SecondPage_WithNavigation: React.FC<Props> = ({ navigation}) => {
                                 borderRadius: 6,
                                 flexDirection: "row",
                             }}>
-                            <Text style={styles.textSign}>Login With Phone</Text>
+                            <Text style={styles.textSign}>SginIn (Login)</Text>
+
+                        </LinearGradient>
+                    </TouchableOpacity>
+                </View>
+
+
+                <View style={{
+                    alignItems: "center",
+                    marginTop: 30,
+                    borderRadius: 6,
+                }}>
+
+
+                    {/*linear-gradient(90deg, #667EEA 0%, #64B6FF 100%);*/}
+                    {/*box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);*/}
+                    {/*border-radius: 6px;*/}
+
+
+                    <TouchableOpacity onPress={() => navigation.navigate("Registration_Screen")}>
+                        <LinearGradient
+                            colors={["#667EEA", "#64B6FF"]}
+                            style={{
+                                width: (displayWidth/2),
+                                height: 50,
+                                justifyContent: "center",
+                                alignItems: "center",
+                                borderRadius: 6,
+                                flexDirection: "row",
+                            }}>
+                            <Text style={styles.textSign}>SginUp (Registration)</Text>
 
                         </LinearGradient>
                     </TouchableOpacity>
@@ -156,25 +171,7 @@ const SecondPage_WithNavigation: React.FC<Props> = ({ navigation}) => {
 
 
 
-                <View style={styles.button}>
 
-
-                            <Text
-                                style={
-
-                                    {
-                                        // color: 'lightgrey',
-                                        color: 'grey',
-                                        // color: "#05375a",
-                                        fontSize: 16,
-                                        fontWeight: "bold",
-                                    }
-                                }>
-                                Shop With us
-                            </Text>
-
-
-                </View>
 
 
 

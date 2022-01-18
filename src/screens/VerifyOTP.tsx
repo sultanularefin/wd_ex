@@ -40,15 +40,11 @@ import {Profile, UserActivity} from "../customInterfaces/UserActivity";
 
 
 import Header_With_Back_Handler_FilterPage from "../components/filter_People_Components/Header_With_Back_Handler_FilterPage";
-import Edit_Filter_Navigation_component_in_Filter_Page
-    from "../components/filter_People_Components/Edit_Filter_Navigation_component_in_Filter_Page";
+import Login_Header
+    from "../components/Login/Login_Header";
 // import {Profile} from "../appStore/Reducers/authSlice";
-import {
-    filter_person_by_Search_String,
-    reset_search,
-    select_ALL_Profiles
-} from "../appStore/Reducers/UserAnalyzerSlice";
-import LoginLabel from "../components/filter_People_Components/LoginLabel";
+
+import LoginLabel from "../components/Login/LoginLabel";
 import PhoneInput from "../components/filter_People_Components/PhoneInput";
 import {LinearGradient} from "expo-linear-gradient";
 import Verify_Text from "../components/filter_People_Components/Verify_Text";

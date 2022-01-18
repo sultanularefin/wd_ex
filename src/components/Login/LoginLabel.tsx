@@ -2,6 +2,7 @@ import {Text, View} from "../Themed";
 import {TouchableOpacity} from "react-native";
 import {CommonActions} from "@react-navigation/native";
 import {Ionicons, MaterialCommunityIcons} from "@expo/vector-icons";
+import React from "react";
 
 
 export interface LoginLabel_Props{

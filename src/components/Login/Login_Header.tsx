@@ -2,6 +2,7 @@ import {Text, View} from "../Themed";
 import {TouchableOpacity} from "react-native";
 import {CommonActions} from "@react-navigation/native";
 import {Ionicons, MaterialCommunityIcons} from "@expo/vector-icons";
+import React from "react";
 
 
 export interface Edit_Filter_Navigation_component_in_Filter_Page_Props{
@@ -9,7 +10,7 @@ export interface Edit_Filter_Navigation_component_in_Filter_Page_Props{
     displayWidth: number,
     navigation:any,
 }
-const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navigation_component_in_Filter_Page_Props> = ({
+const Login_Header: React.FC<Edit_Filter_Navigation_component_in_Filter_Page_Props> = ({
                                                                                                       navigation,
                                                                                                       displayHeight,
                                                                                                       displayWidth,
@@ -17,7 +18,7 @@ const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navi
                                                                                                   }) => {
 
 
-// const Edit_Filter_Navigation_component_in_Filter_Page= () =>{
+// const Login_Header= () =>{
 
     return(
         <View style={{
@@ -124,4 +125,4 @@ const Edit_Filter_Navigation_component_in_Filter_Page: React.FC<Edit_Filter_Navi
     );
 }
 
-export default Edit_Filter_Navigation_component_in_Filter_Page;
+export default Login_Header;

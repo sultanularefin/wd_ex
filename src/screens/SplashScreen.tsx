@@ -26,11 +26,7 @@ import EndDate from "../components/userAnalyzerComponents_Android/EndDate";
 import CheckBoxComponent from "../components/userAnalyzerComponents_Android/CheckBoxComponent";
 import {useAppDispatch} from "../appStore/app/hooks";
 import {CommonActions} from "@react-navigation/native";
-import {
-    filter_Users_By_updated_2_date_intervals_1,
-    user_Filter_Payload_Interface
-} from "../appStore/Reducers/UserAnalyzerSlice";
-import Filter_People_Page from "./Filter_People_Page";
+
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // const calendarImage = require('../../assets/images/date_icon.png');

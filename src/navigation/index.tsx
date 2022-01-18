@@ -24,12 +24,13 @@ import {
     StyleSheet,
     // useWindowDimensions,
 } from 'react-native';
-import EditUserAnalyzer_Page from "../screens/EditUserAnalyzer_Page";
-import Filter_People_Page from "../screens/Filter_People_Page";
+// import EditUserAnalyzer_Page from "../screens/EditUserAnalyzer_Page";
+// import Filter_People_Page from "../screens/Filter_People_Page";
 import SplashScreen from "../screens/SplashScreen";
 import SecondPage_WithNavigation from "../screens/SecondPage_WithNavigation";
 import HomeCategories from "../screens/HomeCategories";
-import Login_with_Phone from "../screens/Login_with_Phone";
+import LoginScreen from "../screens/LoginScreen";
+import Registration_Screen from "../screens/Registration_Screen";
 import VerifyOTP from "../screens/VerifyOTP";
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
     return (
@@ -76,15 +77,21 @@ function RootNavigator() {
 
 
                 <Stack.Screen
-                    name="Login_with_Phone"
-                    component={Login_with_Phone}
+                    name="LoginScreen"
+                    component={LoginScreen}
                     options={{
                         headerShown: false,
                     }}
                 />
 
 
-
+                <Stack.Screen
+                    name="Registration_Screen"
+                    component={Registration_Screen}
+                    options={{
+                        headerShown: false,
+                    }}
+                />
 
                 <Stack.Screen
                     name="HomeCategories"
@@ -93,8 +100,6 @@ function RootNavigator() {
                         headerShown: false,
                     }}
                 />
-
-
 
                 <Stack.Screen
                     name="SecondPage_WithNavigation"
@@ -116,7 +121,8 @@ function RootNavigator() {
                 />
 
 
-                <Stack.Screen
+
+               {/* <Stack.Screen
                     name="EditUserAnalyzer_Page"
                     component={EditUserAnalyzer_Page}
                     options={{
@@ -130,7 +136,8 @@ function RootNavigator() {
                     options={{
                         headerShown: false,
                     }}
-                />
+                />*/}
+
             </Stack.Group>
 
 

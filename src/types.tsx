@@ -8,8 +8,9 @@ import { CompositeScreenProps, NavigatorScreenParams } from '@react-navigation/n
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import UserAnalyzer_Page from "./screens/UserAnalyzer_Page";
 import EditUserAnalyzer_Page from "./screens/EditUserAnalyzer_Page";
-import Filter_People_Page from "./screens/Filter_People_Page";
-import Login_with_Phone from "./screens/Login_with_Phone";
+// import Filter_People_Page from "./screens/Filter_People_Page";
+import LoginScreen from "./screens/LoginScreen";
+import Registration_Screen from "./screens/Registration_Screen";
 import VerifyOTP from "./screens/VerifyOTP";
 
 declare global {
@@ -23,11 +24,14 @@ export type RootStackParamList = {
   UserAnalyzer_Page: undefined;
   NotFound: undefined;
   EditUserAnalyzer_Page: undefined;
-  Filter_People_Page: undefined;
+  // Filter_People_Page: undefined;
   SplashScreen: undefined;
   SecondPage_WithNavigation: undefined;
   HomeCategories: undefined;
-  Login_with_Phone: undefined;
+  // Login_with_Phone: undefined;
+  // Login_with_Phone
+  LoginScreen: undefined;
+  Registration_Screen: undefined;
   VerifyOTP:undefined;
 };
 
